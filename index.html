@@ -19,7 +19,7 @@
       <!-- <h1>YOU ARE INVITED</h1> -->
       <img src="/baby_shoes.jpg" alt="" />
       <div class="greeting-copy">
-        <p>
+        <p class="greeting-copy-text">
           We would like to cordially invite you to join us in celebrating the
           arrival of the newest member of our family, a baby boy!
         </p>
@@ -101,6 +101,8 @@
     .greeting-copy {
       max-width: 60%;
       margin: 2em;
+      animation: animateOnLoad 1.5s;
+      animation-timing-function: ease-in-out;
     }
 
     .greeting-copy > p + p {
@@ -126,10 +128,23 @@
       color: #424242;
       text-decoration: none;
     }
+    .location {
+      animation: animateOnLoad 2s;
+      /* opacity: 0; */
+      animation-delay: 600ms;
+      animation-fill-mode: both;
+      animation-timing-function: ease-in-out;
+    }
     .location h3 {
       font-family: "Courier New", Courier, monospace;
     }
-
+    .rsvp {
+      animation: animateOnLoad 2s;
+      /* opacity: 0; */
+      animation-delay: 1.2s;
+      animation-fill-mode: both;
+      animation-timing-function: ease-in-out;
+    }
     .rsvp h2 {
       text-align: center;
       margin-top: 2em;
@@ -146,6 +161,20 @@
       .greeting-copy {
         max-width: 90%;
         margin: 2em;
+      }
+    }
+    @keyframes animateOnLoad {
+      0% {
+        opacity: 0;
+        transform: translateY(-20%);
+      }
+      30% {
+        opacity: 0;
+      }
+
+      100% {
+        transform: translateY(0);
+        opacity: 1;
       }
     }
   </style>
