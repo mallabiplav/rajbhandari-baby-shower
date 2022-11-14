@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="hero-greeting">
+      <!-- <h1>YOU ARE INVITED</h1> -->
+      <img src="/baby_foot.jpg" alt="" />
+      <div class="greeting-copy">
+        <p>
+          We would like to cordially invite you to join us in celebrating the
+          arrival of the newest member of our family, a baby boy!
+        </p>
+      </div>
+    </div>
+    <div class="last-section">
+      <div class="location">
+        <a
+          href="https://www.google.com/maps/dir//Reception+House+%7C+Wedding+Venue+in+Flushing+Queens+%7C+%EA%B2%B0%ED%98%BC%EC%8B%9D,+%EB%8F%8C%EC%9E%94%EC%B9%98,+%ED%8C%8C%ED%8B%B0+%E7%BB%93%E5%A9%9A%E7%A4%BC%E5%A0%82,+167-17+Northern+Blvd,+Flushing,+NY+11358/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x89c26176ca6a3891:0x2766d19b565077c5?sa=X&ved=2ahUKEwi6oIj0waz7AhXQElkFHWT7BCMQ48ADegQIBBA_"
+        >
+          <h3>Saturday, December 10</h3>
+          <h3>Party house</h3>
+          <h3>137-80 Northern Blvd</h3>
+          <h3>Flushing, New York 11354</h3>
+        </a>
+      </div>
+      <div class="rsvp">
+        <h2>CLICK HERE TO RSVP</h2>
+        <p>(Please RSVP By 20th Nov)</p>
+      </div>
+    </div>
+    <!-- <div class="">
+          <h3<span>Labchan </span><a href="+1-320-223-2590">+1-320-223-2590</a></h3>
+        </div>
+      <div class="">
+          <h3<span>Bipashna </span><a href="+1-512-577-6111">+1-512-577-6111</a></h3>
+       </div> -->
+    <!-- <div class="last-section">
+      <img src="/coming_soon.jpg" alt="" />
+      <p>Please RSVP By 20th November 2022</p>
+      <h2><a href="https://www.amazon.com">REGISTRY</a></h2>
+    </div> -->
+  </body>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    body {
+      background-color: #dfd7c8;
+      color: #424242;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100vh;
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: "Raleway", sans-serif;
+    }
+    h1 {
+      font-size: 3em;
+      padding: 1em 0;
+    }
+    p {
+      font-size: 1.7em;
+      font-family: "Courier New", Courier, monospace;
+    }
+    .hero-greeting,
+    .location,
+    .last-section {
+      text-align: center;
+    }
+    .hero-greeting {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero-greeting img {
+      max-height: 50vh;
+      width: 100%;
+      object-fit: cover;
+      object-position: bottom;
+    }
+    .greeting-copy {
+      max-width: 60%;
+      margin: 2em;
+    }
+
+    .greeting-copy > p + p {
+      margin-top: 1em;
+    }
+
+    .last-section {
+      margin-bottom: 2em;
+    }
+    .last-section > h2 + h2 {
+      margin: 0em;
+    }
+
+    .last-section p {
+      font-family: "Courier New", Courier, monospace;
+      font-size: 1em;
+      margin: 0.5em 0;
+      margin-bottom: 2em;
+    }
+
+    .location a {
+      color: #424242;
+      text-decoration: none;
+    }
+    .location h3 {
+      font-family: "Courier New", Courier, monospace;
+    }
+
+    .rsvp h2 {
+      text-align: center;
+      margin-top: 2em;
+      font-size: 1.2em;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .hero-greeting img {
+        max-height: 40vh;
+      }
+      .greeting-copy {
+        max-width: 90%;
+        margin: 2em;
+      }
+    }
+  </style>
+</html>
