@@ -50,10 +50,16 @@
           <h3>Flushing, New York 11354</h3>
         </a>
       </div>
-      <div class="rsvp">
-        <h2><a href="http://evite.me/Xvn6tNY3FZ">CLICK HERE TO RSVP</a></h2>
-        <p>(Please RSVP By 28th Nov)</p>
+      <div class="cta">
+        <div class="rsvp">
+          <h2><a href="http://evite.me/Xvn6tNY3FZ">Click Here To RSVP</a></h2>
+        </div>
+        <h2 class="slash">|</h2>
+        <div class="registry">
+          <h2><a href="">Click Here For Baby Registry</a></h2>
+        </div>
       </div>
+      <p class="rsvp-by">(Please RSVP By 28th Nov)</p>
     </div>
     <!-- <div class="">
           <h3<span>Labchan </span><a href="+1-320-223-2590">+1-320-223-2590</a></h3>
@@ -138,7 +144,8 @@
     }
 
     .location a,
-    .rsvp a {
+    .rsvp a,
+    .cta a {
       color: #424242;
       text-decoration: none;
     }
@@ -152,19 +159,30 @@
     .location h3 {
       font-family: "Courier New", Courier, monospace;
     }
-    .rsvp {
+    .cta {
       animation: animateOnLoad 2s;
       /* opacity: 0; */
       animation-delay: 1.2s;
       animation-fill-mode: both;
       animation-timing-function: ease-in-out;
     }
-    .rsvp h2 {
+
+    .cta h2 {
       text-align: center;
-      margin-top: 2em;
+      /* margin-top: 2em; */
       font-size: 1.2em;
       cursor: pointer;
       text-decoration: underline;
+    }
+    .slash h2 {
+      font-size: 3em;
+    }
+    .cta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 2em;
+      gap: 1em;
     }
 
     @media (max-width: 768px) {
@@ -175,6 +193,33 @@
       .greeting-copy {
         max-width: 90%;
         margin: 2em;
+      }
+      .slash {
+        display: none;
+      }
+      .cta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 1.5em;
+        gap: 0.5em;
+      }
+      .rsvp,
+      .registry,
+      .rsvp-by {
+        animation: animateOnLoad 2s;
+        /* opacity: 0; */
+        animation-delay: 1.2s;
+        animation-fill-mode: both;
+        animation-timing-function: ease-in-out;
+      }
+
+      .registry {
+        animation-delay: 2s;
+      }
+      .rsvp-by {
+        animation-delay: 2.5s;
       }
     }
     @keyframes animateOnLoad {
